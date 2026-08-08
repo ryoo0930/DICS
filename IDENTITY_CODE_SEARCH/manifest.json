@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "DICS",
+  "version": "2026.08.06",
+  "description": "Dcinside Identity Code Searcher",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://*.dcinside.com/*"
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "식별코드 검색 설정",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://gall.dcinside.com/*",
+        "https://m.dcinside.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_end"
+    }
+  ]
+}

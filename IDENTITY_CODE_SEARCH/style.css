@@ -1,0 +1,68 @@
+/* DCInside 식별코드 검색기 — 콘텐츠 스크립트 스타일 */
+
+/* 배너 (필터/검색 결과 상태 표시) */
+#dc-id-banner td,
+.dc-id-banner-cell {
+  background: #eef2ff !important;
+  border-top: 2px solid #4a6cf7 !important;
+  border-bottom: 1px solid #c5d0f5 !important;
+  text-align: center !important;
+  padding: 9px 12px !important;
+  font-size: 13px !important;
+  color: #333 !important;
+}
+
+/* 공용 버튼 */
+.dc-id-btn {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 3px 12px;
+  border: 1px solid #4a6cf7;
+  border-radius: 4px;
+  background: #fff;
+  color: #4a6cf7;
+  font-size: 12px;
+  cursor: pointer;
+  vertical-align: middle;
+  transition: background 0.15s;
+}
+
+.dc-id-btn:hover {
+  background: #eef2ff;
+}
+
+.dc-id-btn-primary {
+  background: #4a6cf7;
+  color: #fff;
+}
+
+.dc-id-btn-primary:hover {
+  background: #3558e0;
+}
+
+/* 목록 글쓴이 셀 안 인라인 검색 버튼 */
+.dc-id-inline-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 11px;
+  padding: 0 2px;
+  vertical-align: middle;
+  opacity: 0.7;
+  line-height: 1;
+}
+
+td.gall_writer:hover .dc-id-inline-btn {
+  display: inline;
+}
+
+.dc-id-inline-btn:hover {
+  opacity: 1;
+}
+
+/* 검색 드롭다운 옵션 강조 */
+select[name="s_type"] option[value="dcid"] {
+  font-weight: bold;
+  color: #4a6cf7;
+}
